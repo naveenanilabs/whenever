@@ -300,6 +300,8 @@ This tells rvm to trust all rvmrc files.
 ### Heroku?
 
 No. Heroku does not support cron, instead providing [Heroku Scheduler](https://devcenter.heroku.com/articles/scheduler). If you deploy to Heroku, you should use that rather than Whenever.
+### Dynamic Environment
+  system "bundle exec whenever --update-crontab --set environment=#{Rails.env}"
 
 ### Testing
 
